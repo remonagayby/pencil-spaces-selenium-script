@@ -46,12 +46,7 @@ The goal is to ensure that the **Pencil Space** works correctly by testing the f
     mvn clean install
     ```
 
-3. **Compile the Source Code:**
-    ```bash
-    mvn compile
-    ```
-
-4. **Run Tests:**
+3. **Run Tests:**
     ```bash
     mvn test
     ```
