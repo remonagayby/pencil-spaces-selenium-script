@@ -1,6 +1,6 @@
-# Pencil: Test Take-Home Assessment - Selenium Automation Script
+# Pencil Spaces Selenium Automation Script
 
-This project contains a Selenium WebDriver automation script for performing integration tests on the **Pencil** application. 
+This project contains a Selenium WebDriver automation script for performing integration tests on the **Pencil Spaces** application. 
 
 ## Goal
 The goal is to ensure that the **Pencil Space** works correctly by testing the following user actions:
