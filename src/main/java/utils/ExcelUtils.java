@@ -10,17 +10,6 @@ import java.io.IOException;
 
 public class ExcelUtils {
 
-    public static int getTotalRows(String filePath, String sheetName) {
-        try (FileInputStream file = new FileInputStream(filePath);
-             XSSFWorkbook workbook = new XSSFWorkbook(file)) {
-            XSSFSheet sheet = workbook.getSheet(sheetName);
-            return sheet.getLastRowNum();
-        } catch (IOException e) {
-            e.printStackTrace();
-            return -1;
-        }
-    }
-
     public static int getTotalCells(String filePath, String sheetName, int rowNumber) {
         try (FileInputStream file = new FileInputStream(filePath);
              XSSFWorkbook workbook = new XSSFWorkbook(file)) {

@@ -32,11 +32,11 @@ public class HomePage extends ElementActions {
 
         isElementDisplayed(txtHomePageTitle);
 
-        long endTime = System.currentTimeMillis(); // Record end time
+        long endTime = System.currentTimeMillis();
         long loadTime = endTime - startTime;
         logger.info("Page loaded within time: {} ms", loadTime);
         System.out.println("Page loaded within time: " + loadTime + " ms");
-        Assert.assertTrue(loadTime <= 10000, "Load time exceeded 10000 ms");
+        Assert.assertTrue(loadTime <= 1000, "Load time exceeded 1000 ms");
         return this;
     }
 

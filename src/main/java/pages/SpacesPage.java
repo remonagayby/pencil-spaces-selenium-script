@@ -48,7 +48,7 @@ public class SpacesPage extends ElementActions {
 
         actions.moveToElement(space, 100, 100)
                 .clickAndHold()
-                .moveByOffset(xOffset, yOffset)  // Vertical line of 50px
+                .moveByOffset(xOffset, yOffset)
                 .release()
                 .build()
                 .perform();
