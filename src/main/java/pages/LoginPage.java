@@ -14,7 +14,7 @@ public class LoginPage extends ElementActions {
     private final By lblPassword = By.id("password-value");
     private final By btnSigningContinueBtn = By.xpath("//span[contains(@class, 'label') and contains(text(), 'Continue')]");
 
-    public static long startTime = System.currentTimeMillis();
+    public static long startTime;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -52,6 +52,7 @@ public class LoginPage extends ElementActions {
 
     public HomePage clickSigningContinueBtn() {
         clickElement(btnSigningContinueBtn);
+        startTime = System.currentTimeMillis();
         return new HomePage(driver);
     }
 

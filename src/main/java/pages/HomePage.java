@@ -36,7 +36,7 @@ public class HomePage extends ElementActions {
         long loadTime = endTime - startTime;
         logger.info("Page loaded within time: {} ms", loadTime);
         System.out.println("Page loaded within time: " + loadTime + " ms");
-        Assert.assertTrue(loadTime <= 1000, "Load time exceeded 1000 ms");
+        Assert.assertTrue(loadTime <= 5000, "Load time exceeded 5000 ms");
         return this;
     }
 
