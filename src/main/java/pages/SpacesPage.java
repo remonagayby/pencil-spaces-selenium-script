@@ -15,8 +15,8 @@ public class SpacesPage extends ElementActions {
     private final By btnMoveTool = By.xpath("//button[@data-name='space-toolbar-button-pan']");
     private final By spaceBoard = By.xpath("//canvas[@class='upper-canvas fabric-canvas']");
     private final By btnTextTool = By.xpath("//button[@data-name='space-toolbar-button-text']");
-    private final By btnSpaceMenu = By.xpath("//div[@data-name='space-icon-menu-toggle']");
-    private final By btnLeaveSpace = By.xpath("//button[@data-name='space-icon-menu-back-to-home']");
+    private final By btnSpaceMenu = By.xpath("//mat-icon[contains(text(), 'menu')]");
+    private final By btnLeaveSpace = By.id("cdk-overlay-20");
 
     public SpacesPage(WebDriver driver) {
         super(driver);
